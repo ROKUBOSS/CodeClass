@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Auto Close Alert</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var username = prompt("Enter Username");
+		var pass = prompt("Enter Password");
+
+		if(username == "araman" && pass == "123456")
+		{
+
+			temAlert("Login Successfull",5000);
+
+			setTimeout('window.location.href="http://www.w3schools.com"', 5000);
+		}
+
+		else
+		{
+			temAlert("You are not subscribed user",5000);
+		}
+
+
+		function temAlert(msg, duration)
+		{
+			var el = document.createElement("div");
+			el.setAttribute("style","position: absolute; top: 2%; left: 20%; background-color: orange; width: 400px; height: 70px; text-align: center; font-weight: bold; align: center");
+			el.innerHTML = msg;
+
+			setTimeout(function(){
+
+				el.parentNode.removeChild(el);
+			}, duration);
+			
+			document.body.appendChild(el);
+
+		}
+	</script>
+</body>
+</html>

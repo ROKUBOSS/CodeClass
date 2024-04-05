@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Theme Change using Cookie</title>
+</head>
+<body>
+
+	<select id="colorSelect">
+		<option value="white">White</option>
+		<option value="lightblue">Light Blue</option>
+		<option value="lightgreen">Light Green</option>
+		<option value="lightpink">Light Pink</option>
+	</select>
+	<button onclick="setBackgroundColor()">Set Background</button>
+
+
+	<script>
+		function setBackgroundColor()
+		{
+			var selectedColor = document.getElementById("colorSelect").value;
+			document.body.style.backgroundColor = selectedColor;
+			setCookie("backgroundColor",selectedColor,3);
+
+		}
+
+		function setCookie(cname, cvalue, exdays) {
+		  const d = new Date();
+		  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		  let expires = "expires="+ d.toUTCString();
+		  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+	</script>
+</body>
+</html>

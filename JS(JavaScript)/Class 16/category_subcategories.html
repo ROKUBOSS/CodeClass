@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select Products</title>
+
+	<script>
+		var subcategory = {
+
+					Mobile: ["Nokia","Samsung","Apple","OnePlus"],
+					Cloths: ["Shirt","Pants","T-Shirts"]
+		}
+
+		function makeSubmenu(myvalue)
+		{
+			if(myvalue.length==0)
+			 document.getElementById("categorySelect").innerHTML = "<option></option>";
+
+			else
+			{
+				var productOption = "";
+
+				for(categoryId in subcategory[myvalue])
+				{
+					productOption+= "<option>"+subcategory[myvalue][categoryId]+"</option>";
+				}
+				document.getElementById("categorySelect").innerHTML = productOption;
+			}
+		}
+
+		function displaySelect()
+		{
+			var category = document.getElementById("category").value;
+			var subcategory = document.getElementById("categorySelect").value;
+			alert("Product Category: "+category+"\n"+"Product Name: "+subcategory);
+
+		}
+
+
+	</script>
+</head>
+<body>
+
+	<select id="category" size="1" onchange="makeSubmenu(this.value)">
+		<option value="" disabled selected>Choose Category</option>
+		<option>Mobile</option>
+		<option>Cloths</option>
+	</select>
+
+	<select id="categorySelect" size="1">
+		<option value="" disabled selected>Choose Sub-Category</option>
+		<option></option>
+	</select>
+
+	<button onclick="displaySelect()">Show Products</button>
+
+</body>
+</html>

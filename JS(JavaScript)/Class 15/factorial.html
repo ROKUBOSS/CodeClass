@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate Factorial</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		const number = parseInt(prompt("Enter a positive integer:"));
+
+		if(number < 0)
+		{
+			document.write("Error! Factorial for negetive number does not exists");
+		}
+
+		else if(number == 0)
+		{
+			document.write(`The factorial of ${number} is 1`);
+		}
+
+		else
+		{
+			let fact = 1; //(4)--4 * 3 * 2 * 1
+
+			for(i = 1; i <= number; i++)
+			{
+				fact *= i;
+			}
+
+			document.write(`The factorial of ${number} is ${fact}`);
+		}
+	</script>
+
+</body>
+</html>

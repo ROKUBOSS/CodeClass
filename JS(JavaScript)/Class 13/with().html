@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS with() Object</title>
+</head>
+<body>
+	<!-- <script>
+		var obj = {
+
+						'today':'Tuesday', 'tomorrow':'Wednesday'
+				  }
+
+		with(obj)
+		{
+			document.write(today,tomorrow);
+		}
+		
+	</script> -->
+
+	<script type="text/javascript">
+		
+		function addSal(amount)
+		{	
+			with(this)
+			{
+				salary = amount;
+			}
+		}
+		
+		function emp(name, dept)
+		{
+			this.name = name;
+			this.dept = dept;
+			this.salary = 0;
+			this.addSal = addSal;
+
+		}
+
+		var employees = new emp("kamal","admin");
+		employees.addSal(50000);
+		document.write("Employee Name Is:"+employees.name+"<br>");
+		document.write("Employees Department Is:"+employees.dept+"<br>");
+		document.write("Salary Is:"+employees.salary);
+	</script>
+
+</body>
+</html>

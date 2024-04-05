@@ -1,0 +1,49 @@
+<script>
+	class Students
+	{
+		constructor()
+		{
+			var name;
+			var marks;
+		}
+
+		setName(name) //setter method
+		{
+			this.name = name;
+		}
+
+		setMarks(marks) //setter method
+		{
+			this.marks = marks;
+		}
+
+		getName() //getter method
+		{
+			return this.name;
+		}
+
+		getMarks() //getter method
+		{
+			return this.marks;
+		}
+
+	}
+
+	var s = new Students();
+
+	s.setName("Kamal");
+	s.setMarks(90);
+
+	s2 = new Students();
+	s2.setName("Hasan");
+	s2.setMarks(75);
+
+	document.write("The name is:"+s.getName()+"<br>");
+	document.write("The name is:"+s.getMarks()+"<br>");
+
+	document.write("<br>");
+
+	document.write("The name is:"+s2.getName()+"<br>");
+	document.write("The name is:"+s2.getMarks()+"<br>");
+
+</script>

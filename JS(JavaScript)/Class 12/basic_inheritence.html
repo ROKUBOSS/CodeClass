@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inheritence Example</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		/* Access Control Modifier public, private, protected*/
+
+		class User
+		{
+			 #password //private property
+
+			constructor(username,email,password)
+			{
+				this.username = username;
+				this.email = email;
+				this.#password = password;
+			}
+
+			login(userName,password)
+			{
+				if(userName == this.username && password == this.#password)
+				{
+					console.log("Login Successfull");
+				}
+
+				else
+				{
+					console.log("Authentication Failed");
+				}
+			}
+
+			setPassword(newPassword)
+			{
+				this.#password = newPassword;
+			}
+
+			register()
+			{
+				console.log(this.username+"is now registered");
+			}
+		}
+
+		/*let jhon = new User('Jhon','jhon@email.com','123456');
+
+		jhon.register();*/
+
+		class Member extends User
+		{
+			constructor(username,email,password,memberPackage)
+		{	
+			super(username,email,password);
+			
+			this.package = memberPackage;
+		}
+
+			getPackage()
+			{
+				document.write(this.username+"has subscribed to the "+this.package+" package")
+			}
+		}
+
+		let hasan = new Member("hasan","hasan@gmail.com","123456","Standard");
+		hasan.login("hasan","123456");
+		document.write(hasan.username);
+		document.write(hasan.password);
+		hasan.register();
+		//hasan.getPackage();
+	</script>
+
+	<!-- <script>
+		class Bike
+		{
+			constructor()
+			{
+				this.company = "Honda";
+			}
+		}
+
+		class Car extends Bike
+		{
+			constructor(name,price)
+			{
+			super();
+			this.name = name;
+			this.price = price;
+		}
+	}
+
+	var ch = new Car("x-Blade","250000");
+	document.write(ch.company+" "+ch.name+" "+ch.price);
+	</script> -->
+</body>
+</html>
