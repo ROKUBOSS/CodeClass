@@ -1,0 +1,42 @@
+<?php
+
+$books = array(
+
+		array(
+			"name"=>"Web Development",
+			"edition"=>"2nd",
+			"price"=>"BDT800"
+		),
+		array(
+			"name"=>"Red Hat Linux",
+			"edition"=>"3rd",
+			"price"=>"BDT650"
+		),
+		array(
+			"name"=>"C# programming",
+			"edition"=>"2nd",
+			"price"=>"BDT650"
+		),
+		array(
+			"name"=>"Laravel 7",
+			"edition"=>"1st",
+			"price"=>"BDT500"
+		),
+		array(
+			"name"=>"CPA Marketing",
+			"edition"=>"2nd",
+			"price"=>"BDT350"
+		)
+
+);
+
+foreach ($books as $vals) {
+	
+	foreach ($vals as $key=>$new_val) {
+
+		print "$key:$new_val<br>";
+		
+	}
+	print "<br>";
+}
+?>

@@ -1,0 +1,36 @@
+<?php
+/*$x = "some text";
+echo strlen($x);*/
+
+function Length($string) {
+
+	return strlen($string);
+}
+
+echo Length("Some Text");
+
+echo "<br>";
+
+echo str_word_count("Welcome to Cogent");
+
+echo "<br>";
+
+echo strrev("Hello World!");
+
+echo "<br>";
+
+echo strpos("araman666@gmail.com", "@");
+
+echo "<br>";
+
+echo str_replace("BaseIT", "Cogent", "Welcome to BaseIT");
+
+echo "<br>";
+
+$string = "Amanur Rahman";
+echo strtoupper($string);
+echo "<br>";
+echo strtolower($string);
+echo "<br>";
+echo ucwords($string);
+?>

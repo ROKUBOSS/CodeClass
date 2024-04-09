@@ -1,0 +1,16 @@
+<?php
+
+function salesTax($price, $tax)
+{
+	function convert_taka($dollars,$conversion_rate=110)
+	{
+		return $dollars * $conversion_rate;
+	}
+
+	$total = $price + ($price * $tax);
+	echo "Total price is in $:$total"." "."Cost in BDT:"." ".convert_taka($total);
+}
+
+salesTax(15,.05);
+
+?>

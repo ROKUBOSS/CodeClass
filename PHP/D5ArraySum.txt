@@ -1,0 +1,6 @@
+<?php
+$grades = array(55, "hello", 42.5);
+$total = array_sum($grades);
+print $total;
+
+?>

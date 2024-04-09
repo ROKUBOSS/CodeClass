@@ -1,0 +1,12 @@
+<?php
+
+$products = array("iPhone"=>"8.5","Samsung Galaxy"=>"6.0","onePlus"=>"7.8","htc"=>"6.2","Nokia"=>"5.5");
+
+foreach ($products as $key=>$x_value) {
+	
+echo $key.", Rating=".$x_value;
+echo "<br>";
+}
+
+
+?>

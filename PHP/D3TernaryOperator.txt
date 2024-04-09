@@ -1,0 +1,12 @@
+<?php
+
+$priceofBeef = 500;
+
+$decision = ($priceofBeef == 300)?"Buy 3 kg Beef":"Buy 1 kg Beef";
+echo $decision."<br>";
+
+$foo = 2;
+$bar = ($foo == 1)?"1":(($foo == 2)?"2":"Other Values");
+echo $bar;
+
+?>

@@ -1,0 +1,23 @@
+<?php
+function salesTax($price, $tax=.03)
+{
+	$total = $price + ($price * $tax);
+	echo "Total cost is: $total"."<br>";
+}
+
+//salesTax(1200);
+
+$a = "salesTax";
+$a(1200);
+
+echo "<br>";
+
+function customFonts($font, $size=1.5)
+{
+	echo "<p style=\"font-family:$font;font-size:{$size}em;\">Welcome Text!</p>";
+}
+
+customFonts("Arial");
+customFonts("Times",3);
+customFonts("Courier",2);
+?>

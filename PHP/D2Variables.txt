@@ -1,0 +1,30 @@
+<?php
+$a = "This is string";
+$b = 5;
+echo $a."<br>";
+echo $b;
+	$x = "10String5value";
+	$y = 25;
+	$z = $x + $y;
+	echo $z; 
+
+	echo "<br>";
+
+	$number = 5;
+	$sum = 15+$number;
+	$sum = "tewnty";
+	echo $sum;
+
+	echo "<br>";
+
+	$total = 5;
+	$count = "10";
+	$total += $count; //Type juggling
+	print $total;
+
+	echo "<br>";
+
+	echo date("F,d,D,Y");
+?>
+
+<p><?= "This is short tag php"?></p>

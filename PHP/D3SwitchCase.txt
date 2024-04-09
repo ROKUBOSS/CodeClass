@@ -1,0 +1,27 @@
+<?php
+
+$priceofBeef = 500;
+
+switch($priceofBeef)
+{
+	case 100:
+	echo "Buy 5 kg Beef";
+	break;
+
+	case 200:
+	echo "Buy 3 kg Beef";
+	break;
+
+	case 350:
+	echo "Buy 2 kg Beef";
+	break;
+
+	case 450:
+	echo "Buy 1 kg Beef";
+	break;
+
+	default:
+	echo "Dont buy beef";
+}
+
+?>

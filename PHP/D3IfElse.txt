@@ -1,0 +1,14 @@
+<?php
+$priceofBeef = 350;
+
+if($priceofBeef == 250)
+{
+	print "Buy 2 kg Beef";
+}
+
+else
+{
+	print "Buy 1 kg Beef";
+}
+
+?>

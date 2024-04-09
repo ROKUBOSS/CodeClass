@@ -1,0 +1,18 @@
+<?php
+
+//Loan Amortization Table
+
+function recursive($num)
+{
+	echo $num,"<br>";
+
+	if($num < 50)
+	{
+		return recursive($num+1);
+	}
+}
+
+$a = 1;
+recursive($a);
+
+?>

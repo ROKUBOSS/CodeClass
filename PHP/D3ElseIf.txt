@@ -1,0 +1,24 @@
+<?php
+
+$priceofBeef = 500;
+
+if($priceofBeef <= 100)
+{
+	echo "Buy 5 kg Beef";
+}
+
+else if($priceofBeef == 200)
+{
+	echo "Buy 3 kg Beef";
+}
+
+else if($priceofBeef == 350)
+{
+	echo "Buy 2 kg Beef";
+}
+else
+{
+	echo "Dont buy beef";
+}
+
+?>

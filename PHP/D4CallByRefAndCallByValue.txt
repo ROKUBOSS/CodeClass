@@ -1,0 +1,22 @@
+<?php
+
+function addFive($num)
+{
+	$num+=5;
+}
+
+function addSix(&$num)
+{
+	$num+=6;
+}
+
+$origNum = 10;
+
+addFive($origNum);
+echo "Original value is $origNum<br>";
+
+addSix($origNum); //Call by Reference
+echo "Original value is $origNum<br>";
+
+
+?>

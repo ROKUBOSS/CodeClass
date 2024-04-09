@@ -1,0 +1,9 @@
+<?php
+
+$a = "This is string";
+$b = 5;
+
+echo $a."<br>";
+echo $b;
+
+?>

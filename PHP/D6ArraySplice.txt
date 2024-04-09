@@ -1,0 +1,10 @@
+<?php
+
+$arr = array("Kamal","Jamal","Rashed","Moni","Hasan");
+$arr2 = array("Tanvir","Sagor");
+
+array_splice($arr,1,0);
+
+print_r($arr);
+
+?>

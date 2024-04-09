@@ -1,0 +1,52 @@
+<?php
+
+//Encryption-Human Unreadable Format
+//Decryption-Human Readable Format
+
+$msg = "myname";
+echo md5($msg); // Supports 32 bit encryption and that's why it is not safe.
+echo "<br>";
+
+if(is_numeric(777))
+{
+ 	echo "Yes";
+}
+
+else
+{
+	echo "No";
+}
+
+echo "<br>";
+
+echo number_format(25575);
+
+echo "<br>";
+
+echo substr(md5(rand(2,20)),2,6);
+
+//echo substr("araman",2,4);
+
+echo "<br>";
+
+echo sqrt(100);
+
+echo "<br>";
+
+echo pi();
+
+echo "<br>";
+
+$password = "secret";
+$hash = password_hash($password, PASSWORD_DEFAULT);
+$myhash = "$2y$10$.R/Q.Loev19S2wmSdbf6UO2Pt7/tHIxKcep0CmVB193Zo10xf0SVq";
+echo $hash;
+
+echo "<br>";
+
+$pass_verify = password_verify($password,$myhash);
+
+echo "<pre>";
+var_dump($pass_verify);
+echo "</pre>";
+?>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is first php demo page</title>
+</head>
+<body>
+	<h1>Welcome</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation.</p>
+
+	<?php 
+
+		print "This text comes from server<br>"; 
+		echo "This text also comes from server<br>";
+		printf("%d bottls tax price is %f",10,100.50);
+
+
+	?>
+
+</body>
+</html>

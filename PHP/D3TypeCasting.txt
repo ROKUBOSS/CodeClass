@@ -1,0 +1,16 @@
+<?php
+$foo = '6bar55r';
+$bar = true;
+echo gettype($foo)."<br>";
+settype($foo,'integer');
+echo gettype($foo);
+
+echo "<br>";
+
+$foo = 28.50;
+$b = (bool)$foo;
+echo gettype($b);
+echo $b;
+
+
+?>

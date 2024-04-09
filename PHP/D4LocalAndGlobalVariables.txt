@@ -1,0 +1,28 @@
+<?php
+
+/*$a = 1;
+$b = 2;
+
+function sum()
+{
+	global $a, $b;
+	echo $b = $a + $b."<br>";
+	return $c = 10;
+
+}
+
+echo sum();*/
+
+//$noOfCalls = 2;
+
+function counntCall()
+{
+	static $noOfCalls = 0;
+	$noOfCalls++;
+	echo "The function called $noOfCalls times.<br>";
+}
+
+counntCall();
+counntCall();
+counntCall();
+?>
