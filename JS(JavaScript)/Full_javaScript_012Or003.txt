@@ -1,0 +1,44 @@
+1-Var = Variable(পরিবর্তনশীল)
+2-Let
+3-Const (Constant (ধ্রুবক)
+4-<Script></Script>
+5-Index.JS
+6-String Type Value
+7-Boolean Type Value
+8-Concatenation (JS)
+9-Variable / Global-Variable / Super-Global-Variable
+10-Variable / Array / Object
+11-Array / New Array
+12-Date / New Date (JS)
+13-ParseFloat
+14-ParseInt
+15-Template-Literal
+16-NaN (Not a number)
+17-Object / New Object
+18-TypeOf
+19- ||(OR)
+20- &&(AND)
+21- !(NOT)
+22- == (Equal-Operator)
+23- === (Equal & Type-Operator)
+24- != (Not-Equal-Operator)
+25- <(Less-Than)
+26- > (Greater-Than)
+27- <= (Less Than or Equal)
+28- >= (Greater-Than or Equal)
+29- = (value-Assignment) 
+30- += (Assign and Add)
+31- -= (Subtruct then Assign)
+32- *=(Multiply then Assign)
+33- /=(Divide then Assign)
+34- If 
+35- Else-If
+36- Else
+37- Switch Case
+38- \n (For New Line)
+39- Inline / Internal / External JavaScript
+40- ABC.Push("Banana"); Push() Method
+41- ABC.Pop();  Pop() Method
+42- ABC.Unshift("Lemon", "Pineapple"); Unshift() Method
+43- ABC.Shift(); Shift() Method
+44-
