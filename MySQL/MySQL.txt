@@ -1,0 +1,52 @@
+MySQL
+1-MySQL = Maria DB (Version 10 হতে এই নাম। নিযের মেয়ের নামে নামকরণ করা হয়)
+2-Column 
+3-Row
+4-Field (কলামে কোন Data দেয়া হলে তার নাম হয় Field)
+5-Record (Row Wise Data কে Record / Information বলা হয়)
+6-Table = Tuple (Table কে Tuple ও বলা হয়)
+7-Database Language Is = SQL Language
+8-RDBMS = Relational Database Management System
+9-MySQL User Name Is = Root
+10-MySQL User Password (সাধারণত কোন Password হয় না তবে চাইলে Set করা যায়)
+11-SQL = Structured Query Language
+12-DDL = Data Definition Language
+
+*Create (কোন Structure তৈরি করা)
+*Alter (Structure এর মাঝে কোন পরিবর্তন আনা। যেমন ফুল হাতা শার্ট হতে হাফ হাতা করা)
+*Drop (পুরা Structure কে বাদ দেয়া। যেমনঃ ক্লাসরুম যদি Structure হয় তবে সেটা বাদ দেয়া।)
+*Truncate (পুরা Structure কে বাদ না দিয়ে তার Data গুলো বাদ দেয়া। যেমনঃক্লাসরুম রেখে তার সকল Student কে বাদ দেয়া।)
+
+13-DML = Data Manipulation Langiage
+
+*Insert (নতুন কোন Data নিয়ে আসা / যোগ করা)
+*Delete (কোন Specific Data বাদ দেয়া)
+*Update (কোন  Data Update করা। যেমনঃ কোন শার্ট এর রং করা কিন্তু এক্ষেত্রে তার Structure ঠিক থাকা)
+
+14-DCL = Data Control Language
+
+*Grant (Admin কর্তৃক কাউকে সম্পূর্ণ / সীমাবদ্ধ Access দেয়া)
+*Revoke (Admin কর্তৃক প্রদত্ত Access ফেরত নেয়া / কেড়ে নেয়া)
+
+15-TCL = Transaction Control Language 
+
+*Commit (যা Undo করা যায় না।)
+*Rollback (যা Undo করা যায়।)
+*SavePoint (যা Save করা যায়)
+
+16-DQL = Data Query Language (অনেক সময় DQL এটা DML এর মাঝে বিবেচনা করা হয়)
+
+*Select 
+
+17-MySQL Graphical Interface / Command Line
+18-CD = Change Directory
+19-CD..(Then Enter তাহলে Back এ যাবে)
+
+MySQL Some Basic Commands
+1-Select Version();
+2-Select Now(); (Date & Time দুটো একসঙ্গে Show করবে)
+3-Select Current_date; (শুধু Date  Show করবে)
+4-Select User();
+5-Show Databases; (সকল Database Show করবে। মনে রাখতে হবে By Default যেসব Databases থাকবে তা Remove করা যাবে না)
+6-Quit (এটা দিয়ে MySQL হতে বের হতে হবে)
+7-Select version(), Current_Date; (এরকম করে একাধিক Command একসঙ্গে করা যাবে)
