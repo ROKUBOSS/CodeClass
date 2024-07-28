@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICT (HSC)</title>
+<link rel="shortcut icon" href="ictfavicon.webp" type="image/x-icon">
+
+<style>
+  body{
+  background-image:url(bgtwo.jpg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: capitalize;
+
+}
+.collapsible {
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+  margin: 1px;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid gold;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: orange;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+h1{
+  color: gold;
+  border-bottom: 7px groove darkblue;
+}
+h3{
+  border: 2px solid orange;
+  padding: 10px;
+  border-radius: 10px;
+  
+  
+
+}
+.hide{
+  display: none;
+}
+h3:hover .hide{
+  display: block;
+  padding-top: 5px;
+}
+
+
+</style>
+</head>
+<body>
+<button class="collapsible">Language / Library / Framework</button>
+<div class="content">
+ <li>HTML (HyperText Markup Language)</li><br><br>
+ <li>CSS (Cascading Style Sheets)</li><br><br>
+<li>JavaScript (Programming Language)</li><br><br>
+ <li>Bootstrap (CSS Framework)</li><br><br>
+ <li>Tailwind (Utility-First CSS Framework)</li><br><br>
+ <li>PHP (Hypertext Preprocessor)</li><br><br>
+ <li>MySQL (Relational Database Management System)</li><br><br>
+ <li>Laravel (PHP Framework)</li><br><br>
+ <li>React JS (JavaScript Library for Building User Interfaces)</li><br><br>
+ <li>Vue JS (JavaScript Framework)</li><br><br>
+ <li>jQuery (JavaScript Library)</li><br><br>
+ <li>WordPress (Content Management System)</li><br><br>
+ <li>AJAX (Asynchronous JavaScript and XML)</li><br><br>
+ <li>JSON (JavaScript Object Notation)</li><br><br>
+</div>
+<button class="collapsible">Special-Task</button>
+<div class="content">
+  <li>Domain Hosting <br> (Buying / Transfer / Renew / Connect & Web Publish) </li><br><br>
+  <li>Form (User Page & Admin Page / Same Page)</li><br><br>
+  <li>Register / Log In / Log Out</li><br><br>
+  <li>Dashboard</li><br><br>
+  <li>Inventory System</li><br><br><br>
+  <li><b>Security</b> <br> (Image Save / Video Download / Source Code / Screenshot / Screen Record)</li><br><br>
+  <li>Inventory System</li><br><br>
+  <li><i>Template Use (Free / Paid)</i></li><br><br><br>
+</div>
+<!-- <button class="collapsible">?</button>
+<div class="content">
+  ?
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
